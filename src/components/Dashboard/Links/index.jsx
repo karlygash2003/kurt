@@ -6,7 +6,7 @@ export default function LinksComp(props) {
   const navigate = useNavigate();
   const links = [
     { name: "Водительские права", link: "driver" },
-    { name: "Свидетельство о рассторжении брака", link: "marriage" },
+    { name: "Свидетельство о браке", link: "marriage" },
     { name: "Удостоверение личности", link: "id" },
   ];
 

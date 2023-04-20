@@ -10,14 +10,15 @@ import {
 
 export default function DriverComp() {
   return (
-    <Flex w='100%' justify='center'>
+    <Flex w='100%' h='100%' justify='center' alignItems='center' gap="10">
       <Flex
-        w='40%'
+        w='30%'
         justify='center'
         direction='column'
         gap='5'
         pl='20px'
         alignItems='flex-start'
+        h="100%"
       >
         <Image
           borderRadius='2xl'
@@ -33,39 +34,43 @@ export default function DriverComp() {
         />
       </Flex>
       <Flex
-        w='60%'
-        justify='flex-start'
+        w='80%'
+        justify='center'
         direction='column'
-        h="100%"
+        h='100%'
         gap='5'
-        pr="20px"
+        pr='20px'
         alignItems='center'
       >
-        <FormControl colorScheme={'blackAlpha'}>
+        <FormControl colorScheme={"blackAlpha"}>
           <FormLabel>ФИО</FormLabel>
-          <Input color={'blackAlpha'} value={'Мусатов Алмаз Серикович'} disabled />
+          <Input
+            color={"blackAlpha"}
+            value={"Мусатов Алмаз Серикович"}
+            disabled
+          />
         </FormControl>
 
-        <FormControl colorScheme={'blackAlpha'}>
+        <FormControl colorScheme={"blackAlpha"}>
           <FormLabel>ИИН</FormLabel>
-          <Input color={'blackAlpha'} value={'821119300412'} disabled />
+          <Input color={"blackAlpha"} value={"821119300412"} disabled />
         </FormControl>
 
-        <FormControl colorScheme={'blackAlpha'}>
+        <FormControl colorScheme={"blackAlpha"}>
           <FormLabel>Дата рождения</FormLabel>
-          <Input color={'blackAlpha'} value={'19.11.1982'} disabled />
+          <Input color={"blackAlpha"} value={"19.11.1982"} disabled />
         </FormControl>
-        <FormControl colorScheme={'blackAlpha'}>
+        <FormControl colorScheme={"blackAlpha"}>
           <FormLabel>Номер документа</FormLabel>
-          <Input color={'blackAlpha'} value={'000012'} disabled />
+          <Input color={"blackAlpha"} value={"000012"} disabled />
         </FormControl>
-        <FormControl colorScheme={'blackAlpha'}>
+        <FormControl colorScheme={"blackAlpha"}>
           <FormLabel>Дата выдачи</FormLabel>
-          <Input color={'blackAlpha'} value={'16.03.2009'} disabled />
+          <Input color={"blackAlpha"} value={"16.03.2009"} disabled />
         </FormControl>
-        <FormControl colorScheme={'blackAlpha'}>
+        <FormControl colorScheme={"blackAlpha"}>
           <FormLabel>Срок действия</FormLabel>
-          <Input color={'blackAlpha'} value={'16.03.2019'} disabled />
+          <Input color={"blackAlpha"} value={"16.03.2019"} disabled />
         </FormControl>
       </Flex>
     </Flex>

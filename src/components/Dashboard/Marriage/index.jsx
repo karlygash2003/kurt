@@ -11,14 +11,15 @@ import {
 
 export default function MarriageComp() {
   return (
-    <Flex w='100%' justify='center'>
+    <Flex w='100%' justify='center' alignItems='center'>
       <Flex
         w='50%'
         justify='center'
         direction='column'
+        h='100%'
         gap='5'
-        pl='20px'
-        alignItems='flex-start'
+        pr='20px'
+        alignItems='center'
       >
         <Image
           borderRadius='3xl'
@@ -37,7 +38,7 @@ export default function MarriageComp() {
       >
         <Flex
           w='80%'
-          justify='flex-start'
+          justify='center'
           direction='column'
           h='100%'
           gap='5'
@@ -70,14 +71,13 @@ export default function MarriageComp() {
 
         <Flex
           w='80%'
-          justify='flex-start'
+          justify='center'
           direction='column'
           h='100%'
           gap='5'
           pr='20px'
           alignItems='center'
         >
-
           <Heading>Жена</Heading>
           <FormControl colorScheme={"blackAlpha"}>
             <FormLabel>ФИО</FormLabel>
