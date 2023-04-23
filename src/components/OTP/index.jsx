@@ -8,11 +8,13 @@ import {
   AlertDescription,
   useDisclosure,
   Heading,
+  Image,
 } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useCallback } from "react";
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import Icon from "/icon.svg";
 
 export default function OTPComp() {
   const otp = 1111;
@@ -58,9 +60,10 @@ export default function OTPComp() {
         alignItems='center'
         justify='center'
         w='50%'
-        gap='10px'
+        gap='3px'
         color='teal'
       >
+        <Image src={Icon} boxSize='300px' />
         <Heading>Двухфакторная аутентификация</Heading>
       </Flex>
       <Flex

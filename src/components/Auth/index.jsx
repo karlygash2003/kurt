@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, Input } from "@chakra-ui/react";
+import { Button, Flex, Heading, Input, Image } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useCallback } from "react";
 import { useState } from "react";
@@ -36,7 +36,14 @@ export default function AuthComp() {
       h='100%'
       justify='center'
     >
-      <Flex w='80%' justify='center' direction='column' alignItems='center'>
+      <Flex
+        w='80%'
+        justify='center'
+        direction='column'
+        alignItems='center'
+        gap='1'
+      >
+        <Image src={Icon} boxSize='300px' />
         <Heading color='teal'>Авторизация</Heading>
       </Flex>
       <Flex
