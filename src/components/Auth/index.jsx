@@ -1,8 +1,9 @@
-import { Button, Flex, Heading, Input, Image } from "@chakra-ui/react";
+import { Button, Flex, Heading, Image, Input } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useCallback } from "react";
 import { useState } from "react";
-import { useNavigate, useNavigation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import Icon from "/icon.svg";
 
 export default function AuthComp() {
   const navigate = useNavigate();
@@ -36,13 +37,7 @@ export default function AuthComp() {
       h='100%'
       justify='center'
     >
-      <Flex
-        w='80%'
-        justify='center'
-        direction='column'
-        alignItems='center'
-        gap='1'
-      >
+      <Flex w='80%' justify='center' direction='column' alignItems='center' gap="1">
         <Image src={Icon} boxSize='300px' />
         <Heading color='teal'>Авторизация</Heading>
       </Flex>
